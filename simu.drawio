@@ -1,9 +1,27 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T08:39:19.239Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="5x84SvyfWiCTloaBYik7" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-28T08:43:36.682Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="lixeIqPSzonJ32FYchi2" version="24.1.0" type="github">
   <diagram name="第 1 页" id="vgzTifWpOvMfW7XHTrq7">
     <mxGraphModel dx="1089" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-75" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1935" y="1015" width="90" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-73" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-75">
+          <mxGeometry width="90" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-79" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="tamMWbvK10qmy4cCrs3W-75" source="tamMWbvK10qmy4cCrs3W-69" target="tamMWbvK10qmy4cCrs3W-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-69" value="VStart" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-75">
+          <mxGeometry x="20" y="61.8125" width="50" height="29.708333333333336" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-77" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="tamMWbvK10qmy4cCrs3W-75" source="tamMWbvK10qmy4cCrs3W-70" target="tamMWbvK10qmy4cCrs3W-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-70" value="CStart" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-75">
+          <mxGeometry x="20" y="13.895833333333334" width="50" height="29.708333333333336" as="geometry" />
+        </mxCell>
         <mxCell id="oQk5PW6BRJyfj6045QY_-12" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="oQk5PW6BRJyfj6045QY_-2" target="oQk5PW6BRJyfj6045QY_-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -714,17 +732,10 @@
         <mxCell id="tamMWbvK10qmy4cCrs3W-40" value="&lt;div&gt;将部分 invalid 改成 flush + invalid+ prefetch&lt;/div&gt;&lt;div&gt;目标： 寻找长空窗的的invalid&lt;/div&gt;&lt;div&gt;算法：&amp;nbsp;&lt;/div&gt;&lt;div&gt;1. 将invalid 输入依赖节点按照LST 时间排序。算子每个invalid 节点的最大时间间隔&lt;/div&gt;&lt;div&gt;2. 按 invalid的最大时间间隔，排序invalid 节点&lt;/div&gt;&lt;div&gt;3.&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;如果两个节点的间隔 大于&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;(flush+prefetch) *lamda &amp;lt; TimePeriod。那么则进行IR 转化。&lt;/div&gt;&lt;div&gt;（默认 lamda=4， flush+pretch 相当于加了两个算子是有代价的，&lt;/div&gt;&lt;div&gt;在flush 和prefetch 两个时间点之间是收益。 &lt;b&gt;收益期间需要执行算子才能拿到收益）&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="376" y="120" width="460" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-44" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-41" target="tamMWbvK10qmy4cCrs3W-42">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-52" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-41" target="tamMWbvK10qmy4cCrs3W-46">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-41" value="CoreEnd" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1765" y="1010" width="70" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-42" value="Core&amp;nbsp; Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1950" y="1010" width="70" height="40" as="geometry" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-52" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.584;exitY=0.03;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-68" target="tamMWbvK10qmy4cCrs3W-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1810" y="1060" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-45" value="Flush_S" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1950" y="930" width="60" height="40" as="geometry" />
@@ -732,7 +743,7 @@
         <mxCell id="tamMWbvK10qmy4cCrs3W-46" value="Invalid_S" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1950" y="865" width="60" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-55" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-47" target="tamMWbvK10qmy4cCrs3W-42">
+        <mxCell id="tamMWbvK10qmy4cCrs3W-55" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-47" target="tamMWbvK10qmy4cCrs3W-73">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-66" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-47" target="tamMWbvK10qmy4cCrs3W-58">
@@ -741,10 +752,7 @@
         <mxCell id="tamMWbvK10qmy4cCrs3W-47" value="Prefetch_E" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1765" y="790" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-53" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.961;exitY=0.411;exitDx=0;exitDy=0;entryX=0.005;entryY=0.596;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-41" target="tamMWbvK10qmy4cCrs3W-45">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-57" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-42" target="tamMWbvK10qmy4cCrs3W-42">
+        <mxCell id="tamMWbvK10qmy4cCrs3W-53" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.508;exitY=0.036;exitDx=0;exitDy=0;entryX=0.005;entryY=0.596;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-68" target="tamMWbvK10qmy4cCrs3W-45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-58" value="Prefetch_S" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -769,7 +777,27 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-67" value="优先策略" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1760" y="720" width="70" height="30" as="geometry" />
+          <mxGeometry x="1760" y="740" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-74" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1765" y="1015" width="90" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-68" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-74">
+          <mxGeometry width="90" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-71" value="VEnd" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-74">
+          <mxGeometry x="20" y="64.5" width="50" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-72" value="CEnd" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-74">
+          <mxGeometry x="20" y="14.5" width="50" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-44" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-72" target="tamMWbvK10qmy4cCrs3W-70">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-76" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-71" target="tamMWbvK10qmy4cCrs3W-69">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
