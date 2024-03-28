@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T06:58:01.716Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="UvB_UhLENlVeUsPSs-TH" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-28T07:07:08.825Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="5mSJ4TyDbzIpJhLz_8Az" version="24.1.0" type="github">
   <diagram name="第 1 页" id="vgzTifWpOvMfW7XHTrq7">
     <mxGraphModel dx="1314" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -646,28 +646,31 @@
           <mxGeometry x="950" y="690" width="260" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-25" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1200" y="835" width="120" height="120" as="geometry" />
+          <mxGeometry x="1200" y="790" width="120" height="160" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-11" value="&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-25">
-          <mxGeometry width="120" height="120" as="geometry" />
+          <mxGeometry width="120" height="160" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-16" value="多发优先队列&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&#xa;&#xa;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-25">
-          <mxGeometry width="80" height="17.142857142857142" as="geometry" />
+          <mxGeometry width="80" height="19.285714285714285" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-18" value="" style="group" vertex="1" connectable="0" parent="tamMWbvK10qmy4cCrs3W-25">
-          <mxGeometry x="15" y="42" width="95" height="51.42857142857142" as="geometry" />
+          <mxGeometry x="15" y="47.25" width="95" height="57.857142857142854" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-14" value="vector" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-18">
-          <mxGeometry y="17.142857142857142" width="95" height="17.142857142857142" as="geometry" />
+          <mxGeometry y="19.285714285714285" width="95" height="19.285714285714285" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-15" value="cube" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-18">
-          <mxGeometry width="95" height="17.142857142857142" as="geometry" />
+          <mxGeometry width="95" height="19.285714285714285" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-17" value="invalid/prefetch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-18">
-          <mxGeometry y="34.285714285714285" width="95" height="17.142857142857142" as="geometry" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-17" value="invalid" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-18">
+          <mxGeometry y="38.57142857142857" width="95" height="19.285714285714285" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-23" value="flush" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-25">
-          <mxGeometry x="15" y="93.42857142857142" width="95" height="17.142857142857142" as="geometry" />
+          <mxGeometry x="15" y="105.10714285714285" width="95" height="19.285714285714285" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-39" value="prefetch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-25">
+          <mxGeometry x="15" y="124.39714285714285" width="95" height="19.285714285714285" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-27" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="1200" y="990" width="160" height="160" as="geometry" />
@@ -702,8 +705,11 @@
         <mxCell id="tamMWbvK10qmy4cCrs3W-34" value="事件发生队列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="825" y="1080" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-36" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;死锁：&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;无core 资源-- 不存在，更新系统时间后，就会释放资源&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;无cache 资源（多发队列中sdma 为空）-- 那么需要改图，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;将边界最长 Invalid节点改成 flush + prefetch两个节点，根据 EST时间&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;将 Invalid 节点的依赖转移到 flush 和prefetch 时间&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="800" y="910" width="370" height="105" as="geometry" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-36" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;死锁：&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;无core 资源-- 更新系统时间后，就会释放资源&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;无cache 资源（多发队列中sdma 为空）-- 那么需要改图，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;将边界最长 Invalid节点改成 flush + prefetch两个节点，根据 EST时间&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;将 Invalid 节点的依赖转移到 flush 和prefetch 时间&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="850" width="370" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-37" value="&lt;div&gt;入队：S-&amp;gt;E, 时间E的发生时间是 Tsys+ Egde(S-&amp;gt;E)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;事件发生时刻&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;系统时间&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="775" y="970" width="300" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
