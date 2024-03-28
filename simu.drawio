@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T07:38:51.157Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="3-hHISZ299t8ygix-QkE" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-28T08:15:15.480Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="7ak0QM26R4peiJxXpJU9" version="24.1.0" type="github">
   <diagram name="第 1 页" id="vgzTifWpOvMfW7XHTrq7">
     <mxGraphModel dx="1588" dy="955" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -711,8 +711,8 @@
         <mxCell id="tamMWbvK10qmy4cCrs3W-37" value="&lt;div&gt;入队：&lt;/div&gt;&lt;div&gt;如果是由边的原因引起的入队，那么&lt;span style=&quot;background-color: initial;&quot;&gt;S-&amp;gt;E, 事件E的发生时间是 Tsys+ Egde(S-&amp;gt;E)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;如果是从LST出队的节点入队，那么 E 节点的事件发生事件 为 Tsys+1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;出队： 更新系统时间为&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Tsys=max(&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Tsys+1, event.time&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="634" y="1000" width="450" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-40" value="&lt;div&gt;将部分 invalid 改成 flush + invalid+ prefetch&lt;/div&gt;&lt;div&gt;目标： 寻找长空窗的的invalid&lt;/div&gt;&lt;div&gt;算法：&amp;nbsp;&lt;/div&gt;&lt;div&gt;将invalid 输入依赖节点LST 时间进行分组，&lt;/div&gt;&lt;div&gt;如果&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;改成 flush 和 prefetch&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="433" y="125" width="250" height="140" as="geometry" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-40" value="&lt;div&gt;将部分 invalid 改成 flush + invalid+ prefetch&lt;/div&gt;&lt;div&gt;目标： 寻找长空窗的的invalid&lt;/div&gt;&lt;div&gt;算法：&amp;nbsp;&lt;/div&gt;&lt;div&gt;1. 将invalid 输入依赖节点按照LST 时间排序。算子每个invalid 节点的最大时间间隔&lt;/div&gt;&lt;div&gt;2. 按 invalid的最大时间间隔，排序invalid 节点&lt;/div&gt;&lt;div&gt;3.&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;如果两个节点的间隔 大于&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;(flush+prefetch) *lamda &amp;lt; TimePeriod。那么则进行IR 转化。&lt;/div&gt;&lt;div&gt;（默认 lamda=4， flush+pretch 相当于加了两个算子是有代价的，&lt;/div&gt;&lt;div&gt;在flush 和prefetch 两个时间点之间是收益。 收益期间需要执行算子才能拿到收益）&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="376" y="120" width="460" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
