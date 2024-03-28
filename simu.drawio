@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T03:52:38.896Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="m6qUsJk9wC1Kvp2AxAqU" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-28T03:57:23.222Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="flmijkQZFR97hSoiF15W" version="24.1.0" type="github">
   <diagram name="第 1 页" id="vgzTifWpOvMfW7XHTrq7">
-    <mxGraphModel dx="1089" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1314" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -636,44 +636,26 @@
         <mxCell id="oQk5PW6BRJyfj6045QY_-226" value="1.&amp;nbsp; 新增flush 节点需要考虑 消费者使用的是flush 前还是flush 之后的tensor&lt;div&gt;初步方案： 根据截至时间与flush时间线比对&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="1" vertex="1">
           <mxGeometry x="1560" y="365" width="380" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-6" target="tamMWbvK10qmy4cCrs3W-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-6" value="sys time" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1545" y="1100" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-8" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1505" y="1350" width="160" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-8">
-          <mxGeometry width="160" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-2" value="Cache (size)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-8">
-          <mxGeometry x="25" y="162.3529411764706" width="100" height="40.58823529411765" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;临界资源模拟&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-8">
-          <mxGeometry x="10" y="25.705882352941178" width="80" height="54.117647058823536" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-4" value="Cube Core (time)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-8">
-          <mxGeometry x="30" y="59.99588235294119" width="100" height="40.58823529411765" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-9" value="Vector Core (time)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-8">
-          <mxGeometry x="30" y="109.99588235294118" width="100" height="40.58823529411765" as="geometry" />
-        </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-11" value="&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1090" y="1230" width="120" height="110" as="geometry" />
+          <mxGeometry x="1430" y="1560" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-12" value="LST 排序队列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="940" y="1140" width="120" height="60" as="geometry" />
+          <mxGeometry x="970" y="1235" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-13" value="1.&amp;nbsp; 插入悬空的 invalid和 prefetch&lt;div&gt;2. 所有欺负&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1080" y="733" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-16" value="多发优先队列&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&#xa;&#xa;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1090" y="1200" width="80" height="20" as="geometry" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-25" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1190" y="1180" width="120" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-18" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1105" y="1249" width="95" height="60" as="geometry" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-11" value="&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-25">
+          <mxGeometry width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-16" value="多发优先队列&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&#xa;&#xa;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-25">
+          <mxGeometry width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-18" value="" style="group" vertex="1" connectable="0" parent="tamMWbvK10qmy4cCrs3W-25">
+          <mxGeometry x="15" y="49" width="95" height="60" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-14" value="vector" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-18">
           <mxGeometry y="20" width="95" height="20" as="geometry" />
@@ -684,8 +666,32 @@
         <mxCell id="tamMWbvK10qmy4cCrs3W-17" value="invalid/prefetch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-18">
           <mxGeometry y="40" width="95" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-23" value="flush" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1105" y="1309" width="95" height="20" as="geometry" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-23" value="flush" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-25">
+          <mxGeometry x="15" y="109" width="95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-27" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1290" y="1360" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
+          <mxGeometry width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-2" value="Cache (size)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
+          <mxGeometry x="15" y="120" width="75" height="27.65" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;临界资源模拟&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
+          <mxGeometry x="10" y="5.88588235294128" width="80" height="54.117647058823536" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-4" value="Cube Core (available&amp;nbsp;time)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
+          <mxGeometry x="12.5" y="40" width="127.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-9" value="Vector Core&amp;nbsp;&lt;div&gt;(available time)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
+          <mxGeometry x="12.5" y="80" width="137.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-1" target="tamMWbvK10qmy4cCrs3W-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-11" target="tamMWbvK10qmy4cCrs3W-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
