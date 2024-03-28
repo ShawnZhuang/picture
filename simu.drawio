@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T05:57:33.079Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="RaDq9i3HZPRlKAm0EfdF" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-28T06:47:28.597Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="BGKOT7OJIaitNJVpCEI_" version="24.1.0" type="github">
   <diagram name="第 1 页" id="vgzTifWpOvMfW7XHTrq7">
     <mxGraphModel dx="1314" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -640,13 +640,13 @@
           <mxGeometry x="1439" y="1120" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-12" value="LST 排序队列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="990" y="920" width="120" height="30" as="geometry" />
+          <mxGeometry x="827" y="850" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-13" value="1.&amp;nbsp; 插入悬空的 invalid和 prefetch&lt;div&gt;2. 所有切分子块插入按次序 Start2Start 依赖&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="950" y="690" width="260" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-25" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1130" y="830" width="120" height="120" as="geometry" />
+          <mxGeometry x="1200" y="835" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-11" value="&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-25">
           <mxGeometry width="120" height="120" as="geometry" />
@@ -670,7 +670,7 @@
           <mxGeometry x="15" y="93.42857142857142" width="95" height="17.142857142857142" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-27" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1299" y="920" width="160" height="160" as="geometry" />
+          <mxGeometry x="1200" y="990" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
           <mxGeometry width="160" height="160" as="geometry" />
@@ -678,7 +678,7 @@
         <mxCell id="tamMWbvK10qmy4cCrs3W-2" value="Cache (size)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
           <mxGeometry x="15" y="120" width="75" height="27.65" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;临界资源模拟&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
+        <mxCell id="tamMWbvK10qmy4cCrs3W-3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;资源模拟&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
           <mxGeometry x="10" y="5.88588235294128" width="80" height="54.117647058823536" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-4" value="Cube Core (available&amp;nbsp;time)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tamMWbvK10qmy4cCrs3W-27">
@@ -692,6 +692,15 @@
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-11" target="tamMWbvK10qmy4cCrs3W-6">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-32" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.入队： 将已经访问到的，入度为0的节点入队。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;（备注：部分度为0 的节点处在LST队列较后位置，因此较晚入队）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. 多发队列选择节点出队：按规则&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;*满足资源模拟器约束&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;（待细化）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;* 同Core&amp;nbsp; SS依赖&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;* 同kernel Start-End&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;* 同Core&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="740" width="380" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-33" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;出队表示事件发生，增加事件的时间依赖，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;并放到事件发生队列中&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="825" y="1040" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-34" value="事件发生队列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="825" y="1080" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
