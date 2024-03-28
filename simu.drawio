@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T08:19:16.795Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="n7lTeS0wCQvE7oIRa68S" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-28T08:32:36.905Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="RER6nQp0rzoUhH1Q4sji" version="24.1.0" type="github">
   <diagram name="第 1 页" id="vgzTifWpOvMfW7XHTrq7">
-    <mxGraphModel dx="1588" dy="955" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1089" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -639,8 +639,8 @@
         <mxCell id="tamMWbvK10qmy4cCrs3W-6" value="sys time" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1439" y="1120" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tamMWbvK10qmy4cCrs3W-12" value="LST 排序队列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="820" y="760" width="120" height="30" as="geometry" />
+        <mxCell id="tamMWbvK10qmy4cCrs3W-12" value="排序队列（LST）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="626" y="770" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-13" value="1.&amp;nbsp; 插入悬空的 invalid和 prefetch&lt;div&gt;2. 所有切分子块插入按次序 Start2Start 依赖&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="950" y="690" width="260" height="40" as="geometry" />
@@ -713,6 +713,36 @@
         </mxCell>
         <mxCell id="tamMWbvK10qmy4cCrs3W-40" value="&lt;div&gt;将部分 invalid 改成 flush + invalid+ prefetch&lt;/div&gt;&lt;div&gt;目标： 寻找长空窗的的invalid&lt;/div&gt;&lt;div&gt;算法：&amp;nbsp;&lt;/div&gt;&lt;div&gt;1. 将invalid 输入依赖节点按照LST 时间排序。算子每个invalid 节点的最大时间间隔&lt;/div&gt;&lt;div&gt;2. 按 invalid的最大时间间隔，排序invalid 节点&lt;/div&gt;&lt;div&gt;3.&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;如果两个节点的间隔 大于&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;(flush+prefetch) *lamda &amp;lt; TimePeriod。那么则进行IR 转化。&lt;/div&gt;&lt;div&gt;（默认 lamda=4， flush+pretch 相当于加了两个算子是有代价的，&lt;/div&gt;&lt;div&gt;在flush 和prefetch 两个时间点之间是收益。 &lt;b&gt;收益期间需要执行算子才能拿到收益）&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="376" y="120" width="460" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-41" target="tamMWbvK10qmy4cCrs3W-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-41" target="tamMWbvK10qmy4cCrs3W-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-41" value="CoreEnd" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="800" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-42" value="Core&amp;nbsp; Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="800" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-45" value="Flush" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1890" y="935" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-46" value="Invalid" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1890" y="875" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-47" target="tamMWbvK10qmy4cCrs3W-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-47" value="Prefetch" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="710" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.005;entryY=0.596;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-41" target="tamMWbvK10qmy4cCrs3W-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tamMWbvK10qmy4cCrs3W-57" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tamMWbvK10qmy4cCrs3W-42" target="tamMWbvK10qmy4cCrs3W-42">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
